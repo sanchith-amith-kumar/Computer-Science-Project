@@ -1,0 +1,12 @@
+{
+  "checks": [
+    {
+      "id": "CKV_AWS_1",
+      "description": "Ensure S3 buckets are not publicly accessible"
+    },
+    {
+      "id": "CKV_AZURE_2",
+      "description": "Ensure Azure storage accounts use HTTPS"
+    }
+  ]
+}

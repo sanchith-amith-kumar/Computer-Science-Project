@@ -1,0 +1,7 @@
+resource "aws_instance" "{{ name }}" {
+  ami           = "ami-0c55b159cbfafe1f0"
+  instance_type = "{{ instance_type }}"
+  tags = {
+    Name = "{{ name }}"
+  }
+}

@@ -1,0 +1,7 @@
+rules:
+  - id: TF001
+    description: Ensure variable names follow snake_case.
+  - id: TF002
+    description: Disallow hardcoded credentials.
+  - id: TF003
+    description: Enforce versioned providers.
