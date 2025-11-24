@@ -66,30 +66,27 @@ Deployment-Ready IaC Output
 ```
 intelligent-iac-generator
 ├── templates/
-│   ├── aws/
-│   ├── azure/
-│   └── gcp/
+│ ├── aws/
+│ ├── azure/
+│ └── gcp/
 ├── engine/
-│   ├── parser.py
-│   ├── rule_engine.py
-│   └── generator.py
+│ ├── parser.py
+│ ├── rule_engine.py
+│ └── generator.py
 ├── validation/
-│   ├── validate.sh
-│   ├── lint_rules.yaml
-│   └── checkov_policy.json
+│ ├── validate.sh
+│ ├── lint_rules.yaml
+│ └── checkov_policy.json
 ├── examples/
-│   ├── input_aws.json
-│   ├── input_gcp.json
-│   └── output_terraform/
+│ ├── input_aws.json
+│ └── output/
 ├── docs/
-│   ├── architecture-diagram.png
-│   ├── method-description.md
-│   └── references.bib
+│ ├── architecture-diagram.png
+│ └── references.bib
 ├── tests/
-│   ├── test_rules.py
-│   └── test_validation.py
+│ ├── test_pipeline.py
+│ └── test_validation.py
 ├── requirements.txt
-├── LICENSE
 └── README.md
 ```
 
