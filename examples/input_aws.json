@@ -4,14 +4,16 @@
   "resources": {
     "instance_type": "t3.micro",
     "count": 2,
+    "s3": true,
+    "alb": true,
     "rds": false,
     "lambda": true,
-    "dynamodb": true,
-    "sns": true,
-    "sqs": true,
-    "cloudfront": true,
-    "route53": true,
-    "cloudwatch": true,
-    "secrets": true
+    "lambda_name": "my_lambda_function",
+    "lambda_memory_size": 128,
+    "lambda_timeout": 10,
+    "lambda_runtime": "python3.11",
+    "lambda_handler": "app.lambda_handler",
+    "secrets": true,
+    "secret_name": "my_secret"
   }
 }

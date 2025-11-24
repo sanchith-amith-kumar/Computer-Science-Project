@@ -47,6 +47,12 @@ class RuleEngine:
             'enable_route53': resources.get('route53', False),
             'enable_cloudwatch': resources.get('cloudwatch', False),
             'enable_secrets': resources.get('secrets', False),
+            'lambda_name': resources.get('lambda_name', 'my_lambda'),
+            'lambda_memory_size': resources.get('lambda_memory_size', 128),
+            'lambda_timeout': resources.get('lambda_timeout', 10),
+            'lambda_runtime': resources.get('lambda_runtime', 'python3.11'),
+            'lambda_handler': resources.get('lambda_handler', 'app.lambda_handler'),
+            'secret_name': resources.get('secret_name', 'my_secret'),
             'tags': {
                 'Project': 'IntelligentIaC',
                 'Env': env
