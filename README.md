@@ -124,8 +124,8 @@ intelligent-iac-generator
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/intelligent-iac-generator.git
-cd intelligent-iac-generator
+git clone https://github.com/sanchith-amith-kumar/Computer-Science-Project.git
+cd Computer-Science-Project
 
 # 2. Install dependencies
 pip install -r requirements.txt
