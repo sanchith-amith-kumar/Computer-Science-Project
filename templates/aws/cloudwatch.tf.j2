@@ -1,0 +1,8 @@
+resource "aws_cloudwatch_log_group" "{{ log_group_name }}" {
+  name              = "/aws/{{ log_group_name }}"
+  retention_in_days = 14
+  tags = {
+    Environment = "{{ environment }}"
+    Project     = "IntelligentIaC"
+  }
+}

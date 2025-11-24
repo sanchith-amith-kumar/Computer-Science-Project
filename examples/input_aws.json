@@ -1,13 +1,17 @@
 {
   "provider": "aws",
-  "environment": "production",
   "region": "us-east-1",
-  "vpc_cidr": "10.0.0.0/16",
   "resources": {
     "instance_type": "t3.micro",
     "count": 2,
-    "s3": true,
-    "alb": true,
-    "rds": false
+    "rds": false,
+    "lambda": true,
+    "dynamodb": true,
+    "sns": true,
+    "sqs": true,
+    "cloudfront": true,
+    "route53": true,
+    "cloudwatch": true,
+    "secrets": true
   }
 }

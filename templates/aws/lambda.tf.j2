@@ -1,0 +1,9 @@
+resource "aws_lambda_function" "{{ lambda_name }}" {
+  function_name = "{{ lambda_name }}"
+  runtime       = "{{ runtime }}"
+  handler       = "{{ handler }}"
+  role          = "{{ role_arn }}"
+  memory_size   = {{ memory }}
+  timeout       = {{ timeout }}
+  filename      = "{{ zip_file }}"
+}

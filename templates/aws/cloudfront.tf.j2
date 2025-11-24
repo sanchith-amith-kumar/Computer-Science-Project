@@ -1,0 +1,22 @@
+resource "aws_cloudfront_distribution" "{{ distribution_name }}" {
+  origin {
+    domain_name = "{{ origin_domain }}"
+    origin_id   = "{{ distribution_name }}-origin"
+  }
+
+  enabled             = true
+  is_ipv6_enabled     = true
+  default_root_object = "index.html"
+
+  default_cache_behavior {
+    allowed_methods  = ["GET", "HEAD"]
+    cached_methods   = ["GET", "HEAD"]
+    target_origin_id = "{{ distribution_name }}-origin"
+    viewer_protocol_policy = "redirect-to-https"
+  }
+
+  tags = {
+    Environment = "{{ environment }}"
+    Project     = "IntelligentIaC"
+  }
+}
