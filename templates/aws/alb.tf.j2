@@ -1,0 +1,8 @@
+# Placeholder ALB resource - requires proper subnets and security groups to be fully functional
+resource "aws_lb" "alb" {
+  name               = "iac-{{ environment }}-alb"
+  internal           = false
+  load_balancer_type = "application"
+  subnets            = []
+  tags = merge(var.tags, { Name = "iac-{{ environment }}-alb" })
+}

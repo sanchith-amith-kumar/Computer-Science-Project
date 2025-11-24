@@ -1,0 +1,18 @@
+variable "region" {
+  type = string
+  default = "{{ region }}"
+}
+
+variable "environment" {
+  type = string
+  default = "{{ environment }}"
+}
+
+variable "tags" {
+  type = map(string)
+  default = {
+{% for k,v in tags.items() %}
+    "{{ k }}" = "{{ v }}"
+{% endfor %}
+  }
+}

@@ -1,0 +1,5 @@
+Included original assignment and phase-1 abstract (paths provided by assistant environment):
+- /mnt/data/Assignments Portfolio_CSEMCSPCSP01.pdf
+- /mnt/data/Amith_Kumar-Sanchith_4252527_PCS_P1_S.pdf
+
+Add these PDFs to your submission where required.

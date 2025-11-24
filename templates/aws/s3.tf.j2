@@ -1,0 +1,5 @@
+resource "aws_s3_bucket" "artifact" {
+  bucket = "iac-{{ environment }}-artifacts-{{ region }}"
+  acl    = "private"
+  tags = merge(var.tags, { Name = "iac-{{ environment }}-s3" })
+}

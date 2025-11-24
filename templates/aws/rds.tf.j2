@@ -1,0 +1,10 @@
+resource "aws_db_instance" "default" {
+  allocated_storage    = 20
+  engine               = "{{ db_engine }}"
+  instance_class       = "{{ db_instance_class }}"
+  name                 = "iac_{{ environment }}"
+  username             = "iacadmin"
+  password             = "ChangeMe123!"
+  skip_final_snapshot  = true
+  tags = merge(var.tags, { Name = "iac-{{ environment }}-rds" })
+}
