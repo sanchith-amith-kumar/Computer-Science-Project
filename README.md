@@ -74,9 +74,7 @@ intelligent-iac-generator
 │ ├── rule_engine.py
 │ └── generator.py
 ├── validation/
-│ ├── validate.sh
-│ ├── lint_rules.yaml
-│ └── checkov_policy.json
+│ └── validate.sh
 ├── examples/
 │ ├── input_aws.json
 │ └── output/
