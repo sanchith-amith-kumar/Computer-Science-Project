@@ -128,12 +128,10 @@ cd Computer-Science-Project
 pip install -r requirements.txt
 
 # 3. Provide configuration input
-python engine/parser.py --input examples/input_aws.json
+python main.py --config examples/input_aws.json --out output
 
-# 4. Generate IaC template
-python engine/generator.py --provider aws --env production
 
-# 5. Validate generated templates
+# 4. Validate generated templates
 bash validation/validate.sh
 ```
 
