@@ -141,15 +141,24 @@ bash validation/validate.sh
 ```json
 {
   "provider": "aws",
-  "environment": "production",
   "region": "us-east-1",
-  "vpc_cidr": "10.0.0.0/16",
-  "instance_type": "t3.micro",
-  "scaling": {
-    "min": 2,
-    "max": 5
+  "resources": {
+    "instance_type": "t3.micro",
+    "count": 2,
+    "s3": true,
+    "alb": true,
+    "rds": false,
+    "lambda": true,
+    "lambda_name": "my_lambda_function",
+    "lambda_memory_size": 128,
+    "lambda_timeout": 10,
+    "lambda_runtime": "python3.11",
+    "lambda_handler": "app.lambda_handler",
+    "secrets": true,
+    "secret_name": "my_secret"
   }
 }
+
 ```
 
 ---
