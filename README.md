@@ -130,7 +130,6 @@ pip install -r requirements.txt
 # 3. Provide configuration input
 python main.py --config examples/input_aws.json --out output
 
-
 # 4. Validate generated templates
 bash validation/validate.sh
 ```
